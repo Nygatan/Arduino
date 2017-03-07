@@ -9,7 +9,7 @@ void setup() {
   //Start button
   btnRoll.begin();
 
-  // Attach the servo on pin 9 to the servo object 
+  // Attach the servo on pin 9 to the servo object
   servo.attach(9);
 
   //Initialise a pseudo-random number generator
@@ -17,6 +17,8 @@ void setup() {
 
   // Move Servo to position zero
   servo.write(0);
+
+  // Adding something
 
   //Show steps for calibratiton
   for(int i = 1; i < 7;i++){
@@ -48,6 +50,5 @@ void setDice(int number) {
 
   //Move servo
   servo.write(dicepointer);
-  
-}
 
+}
